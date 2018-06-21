@@ -1,0 +1,22 @@
+{
+  "name": "Pizza42",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "npm": "6.1.x"
+  },
+  "scripts": {
+    "server": "node server.js"
+  },
+  "author": "Alex Jones",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "express-jwt": "^5.3.1",
+    "express-jwt-authz": "^1.0.0",
+    "jwks-rsa": "^1.2.1",
+    "request": "^2.87.0"
+  }
+}

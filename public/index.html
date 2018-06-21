@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Pizza 42</title>
+    <base href="/">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loading">
+        <img src="loading.svg" alt="Loading spinner">
+    </div>
+    <div class="content">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Pizza 42</a>
+                    <button id="btn-home-view" class="btn btn-primary btn-margin">
+                        Home
+                    </button>
+                    <button id="btn-profile-view" class="btn btn-primary btn-margin">
+                        Profile
+                    </button>
+                    <button id="btn-order-pizza-view" class="btn btn-primary btn-margin">
+                        Order Pizza
+                    </button>
+                    <button id="qsLoginBtn" class="btn btn-primary btn-margin">
+                        Log In
+                    </button>
+                    <button id="qsLogoutBtn" class="btn btn-primary btn-margin">
+                        Log Out
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            <!-- home view -->
+            <div id="home-view">
+                <h4></h4>
+            </div>
+            <!-- profile view -->
+            <div id="profile-view" class="panel panel-default profile-area">
+                <div class="panel-heading">
+                    <h3>Profile</h3></div>
+                <div class="panel-body">
+                    <img class="avatar" alt="avatar">
+                    <div>
+                        <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
+                        <h3 class="nickname"></h3>
+                    </div>
+                    <pre class="full-profile"></pre>
+                </div>
+            </div>
+            <!-- get pizza view -->
+            <div id="get-pizza-view">
+                <h1 id="get-pizza-message"></h1>
+                <button id="btn-order-pizza" class="btn btn-primary">
+                    Place Pizza Order
+                </button>
+                <!-- pizza view -->
+                <div id='pizza-view'>
+                    <h2 id="pizza-message"></h2>
+                    <img src="pizza.jpg" height=400 width=600 alt="YOUR PIZZA!">
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+    <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+</body>
+
+</html>
